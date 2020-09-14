@@ -2,7 +2,6 @@ class Contact < ApplicationRecord
     has_many :contactEmails
     has_many :contactPhoneNumbers
 
-    validates :firstName, presence: true
-    validates :lastName, presence: true
-    validates :twitterUsername, allow_blank: true
+    validates_presence_of :firstName, :lastName, presence: true
+
 end
