@@ -1,24 +1,29 @@
-# README
+# Rails Graphql API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Quick Start.
 
-Things you may want to cover:
+```
+    Make sure you are running a rails version of 6.0.3
 
-* Ruby version
+    clone repository
 
-* System dependencies
+    cd <repo-name>
+```
 
-* Configuration
+### DB Setup
 
-* Database creation
+```
+    Currently using Sqlite as DB
 
-* Database initialization
+    run 'bundle install' to install gems found in the Gemfile
 
-* How to run the test suite
+    run 'rails db:create' if DB files do not exists
 
-* Services (job queues, cache servers, search engines, etc.)
+    'rails db:migrate' to create tables
 
-* Deployment instructions
+    'rails db:seed" to created seeded data in seeds.rb
 
-* ...
+    'rails server' to start application
+
+    [http://localhost:3000/graphql] gain access to API endpoint
+```
